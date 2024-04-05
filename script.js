@@ -18,7 +18,10 @@ function generateCalendar(month, year) {
         "December",
     ]
     const daysInMonth = new Date(year, month + 1, 0).getDate()
+    console.log(daysInMonth)
+
     const firstDayOfMonth = new Date(year, month, 1).getDay()
+    console.log(firstDayOfMonth)
 
     header.innerHTML = monthNames[month] + " " + year
 
