@@ -27,7 +27,7 @@ function generateCalendar(month, year) {
 
     let date = 1
     let html = ""
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 5; i++) {
         html += "<tr>"
         for (let j = 0; j < 7; j++) {
             if ((i === 0 && j < firstDayOfMonth) || date > daysInMonth) {
