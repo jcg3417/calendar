@@ -46,10 +46,15 @@ function generateCalendar(month, year) {
 const currentDate = new Date()
 generateCalendar(currentDate.getMonth(), currentDate.getFullYear())
 
-const clickTest = document.querySelector(".calendar-table")
+const eventTest = document.querySelector(".calendar-table")
 
-function handleClicktest() {
-    console.log("Clicked!")
+function handleMouseenter() {
+    console.log("Mouse entered!")
 }
 
-clickTest.addEventListener("click", handleClicktest)
+function handleMouseleave() {
+    console.log("Mouse left!")
+}
+
+eventTest.addEventListener("mouseenter", handleMouseenter)
+eventTest.addEventListener("mouseleave", handleMouseleave)
