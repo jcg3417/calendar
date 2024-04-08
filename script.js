@@ -45,3 +45,11 @@ function generateCalendar(month, year) {
 // Initial render
 const currentDate = new Date()
 generateCalendar(currentDate.getMonth(), currentDate.getFullYear())
+
+const clickTest = document.querySelector(".calendar-table")
+
+function handleClicktest() {
+    console.log("Clicked!")
+}
+
+clickTest.addEventListener("click", handleClicktest)
